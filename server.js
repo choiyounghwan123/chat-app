@@ -10,15 +10,6 @@ const io = new Server(server,{
 
 io.on('connection', socket =>{
     console.log('a user connected');
-
-    socket.on('disconnet',()=>{
-        console.log('user disconnected');
-    });
-
-    socket.on('msg', msg =>{
-        console.log('message : '+msg);
-    })
-
 });
 
 server.listen(8080,()=>{
